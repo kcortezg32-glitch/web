@@ -1,0 +1,85 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Mi_PANAMA</title>
+    <link rel="icon" href="img/icon_panama.png" />
+    <link rel="stylesheet" href="estilos.css" />
+  </head>
+  <body>
+    <header>
+      <div class="logo">
+        <img src="img/panama.png" alt="panama_logo" class="mi_logo" />
+        <h1 class="mi_pais">Mi_PANAMA</h1>
+      </div>
+      <nav>
+        <ul>
+          <li><a href="index.html">Inicio</a></li>
+          <li><a href="information.html">Información</a></li>
+          <li><a href="nosotros.html">Nosotros</a></li>
+          <li><a href="contacto.html">Contáctanos</a></li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <div class="formulario">
+        <h2>Contáctanos</h2>
+
+        <form>
+          <!--Campo de nombre-->
+          <label for="Nombre">Nombre</label>
+          <input
+            type="text"
+            id="Nombre"
+            placeholder="Ingrese su nombre"
+            required
+          />
+          <!--Campo de correo electrónico-->
+          <label for="correo">Correo electrónico</label>
+          <input
+            type="email"
+            id="correo"
+            placeholder="Ingrese su correo electrónico"
+            required
+          />
+          <!--Campo de categoría-->
+          <label for="categoria">Asunto o Categoría</label>
+          <select id="categoria">
+            <option value="">Seleccione una opción</option>
+            <option value="consulta">Consulta</option>
+            <option value="sugerencia">Sugerencia</option>
+            <option value="reclamo">Reclamo</option>
+          </select>
+
+          <!--Campo de preferencia de contacto-->
+          <fieldset>
+            <legend>¿Cómo prefieres que te contactemos?</legend>
+            <label>
+              <input type="radio" name="contacto" id="correo" value="correo" />
+              Correo electrónico
+            </label>
+            <label>
+              <input type="radio" name="contacto" value="telefono" />
+              Teléfono
+            </label>
+          </fieldset>
+
+          <!--Campo de preferencia de contacto-->
+          <label for="mensaje">Mensaje</label>
+          <textarea
+            id="mensaje"
+            placeholder="Ingrese su mensaje"
+            rows="4"
+          ></textarea>
+
+          <!--Botón de envío-->
+          <button type="submit">Enviar</button>
+        </form>
+      </div>
+    </main>
+    <footer id="contacto">
+      <p>&copy; 2024 Mi_PANAMA. Todos los derechos reservados.</p>
+    </footer>
+  </body>
+</html>

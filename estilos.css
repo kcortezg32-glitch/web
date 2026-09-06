@@ -1,0 +1,192 @@
+:root { /*variables de la paleta de colores para las páginas*/
+  --var-fondo: #f4f4f4;
+  --var-texto: #222;
+  --var-titulo: #002868;
+  --var-accento: #4a48cb;
+  --var-tarjetas: white;
+  --var-pieimagen: gray;
+}
+
+body {
+  margin: 0;
+  font-family: "Segoe UI", Arial, sans-serif;/*tipografia que se va a utilizar*/
+  background-color: var(--var-fondo);
+  color: var(--var-texto);
+}
+
+header {
+  display: flex; /*uso de flexbox*/
+  justify-content: space-between;
+  align-items: center;
+  background: var(--var-titulo);
+  color: var(--var-fondo);
+  text-align: center;
+  padding: 5px;
+}
+/*Edición de el nombre de la empresa*/
+.mi_pais {
+  margin: 0;
+  font-size: 30px;
+  color:var(--var-tarjetas);
+}
+
+/*Edición de los enlaces del menú*/
+nav {
+  background: (var(--var-titulo));
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  margin: 0;
+  padding: 0;
+}
+
+nav ul li {
+  margin: 0 15px;
+  font-size: 20px;
+}
+nav ul li a:hover {
+  border-bottom: 3px solid var(--var-accento);
+  color: var(--var-accento);
+}
+nav ul li a {
+  color: var(--var-fondo);
+  text-decoration: none;
+  font-weight: bold;
+  display: block;
+  padding: 12px 0;
+  transition: background-color 0.2s;
+}
+.logo{
+  display: flex;
+  align-items: center;
+}
+.links{
+  text-decoration: none;
+  color:var(--var-titulo);
+}
+.links:hover{
+  color:var(--var-accento);
+  
+}
+/*Aqui se edita la información de las secciones principales*/
+main {
+  max-width: 900px;
+  margin: 30px auto;
+  padding: 0 20px;
+  line-height: 1.7; /*aplicación de interlineado*/
+}
+
+section {
+  background-color: var(--var-tarjetas);
+  border-radius: 10px;
+  padding: 25px;
+  margin-bottom: 30px;
+  border-bottom: 3px solid var(--var-accento);
+   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+.paisaje {
+  width: 300px;
+  height: auto;
+  border-radius: 8px;
+  margin: 15px 0;
+}
+h1{
+  color: var(--var-titulo);/*ccolor para el titulo*/
+
+}
+h2 {
+  color: var(--var-titulo);
+  border-left: 3px solid var(--var-accento);
+  padding-left: 8px;
+
+}  
+
+h3 {
+  color: var(--var-accento);
+}
+/*edición de las imagenes*/
+img {
+  max-width: 100%;
+  border-radius: 8px;
+  margin: 15px 0;
+}
+.mi_logo{
+  width: 55px;
+}
+figcaption{
+  color: var(--var-pieimagen);
+}
+ol {
+  line-height: 1.8;
+
+}
+dt{
+  font-weight: bold;
+}
+
+/*edicion del formulario*/
+.formulario {
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: var(--var-tarjetas);
+  border-radius: 10px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  padding: 20px;
+  border-radius: 10px;
+ 
+}
+form label, form legend {
+  font-weight: bold;
+  margin-bottom: 5px;
+  color: var(--var-titulo);
+}
+form input, form select, form textarea{
+  padding: 10px;
+  border-radius: 5px;
+  border: 1px solid var(--var-titulo);
+}
+form input:focus,
+form select:focus,
+form textarea:focus {
+    outline: none;
+    border-color: var(--var-accento);
+    box-shadow: 0 0 5px var(--var-accento);
+}
+
+fieldset{
+  border-radius: 8px;
+  padding: 10px;
+  border: 1px solid var(--var-titulo);
+}
+fieldset input {
+  width: auto;
+}
+form button {
+ width: 30%;
+ height: 35px;
+ background-color: var(--var-titulo);
+ color: var(--var-fondo);
+ border-radius: 5px;
+}
+form button:hover {
+  background-color: var(--var-accento);
+  color: var(--var-fondo);
+  cursor: pointer;
+}
+/*edición del pie de página*/
+footer {
+  background-color: var(--var-titulo);
+  color:var(--var-fondo);
+  text-align: center;
+  padding: 15px;
+  margin-top: 40px;
+  
+}

@@ -123,12 +123,15 @@ h3 {
   text-align: center;
   box-shadow: 0 2px 5px rgba(34, 55, 138, 0.1);
   width: auto;
-  padding:20px;
+  padding: 15px;
   border-radius: 12px;
 }
 .tarjetas_lista img{
   width:500px;
-  
+
+}
+.tarjetas_lista:hover{
+  padding: 20px;
 }
 /*edición de las imagenes*/
 img {

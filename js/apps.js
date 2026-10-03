@@ -1,7 +1,3 @@
-// ==========================================
-// Laboratorio 3: Fundamentos de JavaScript
-// ==========================================
-
 // --- Variables (let/const) ---
 const nombrePagina = "Agencia de Viajes";
 let numeroPaquetes = 0;
@@ -46,3 +42,28 @@ while (indice < paquetes.length) {
 // --- Ejemplo suelto usando la función calcularTotal ---
 const totalEjemplo = calcularTotal(180.00, 3);
 console.log(`Ejemplo: 3 personas a $180.00 c/u = $${totalEjemplo.toFixed(2)}`);
+
+// --- Formulario de contacto ---
+
+// 1. Seleccionamos el formulario y el párrafo del mensaje
+const formulario = document.querySelector("#formulario");
+const mensajeForm = document.querySelector("#form-mensaje");
+
+// 2. Solo se ejecuta si el formulario existe en esta página
+if (formulario) {
+  // 3. Escuchamos cuando el usuario presiona "Enviar"
+  formulario.addEventListener("submit", function (event) {
+    event.preventDefault(); // evita que la página se recargue
+
+    // 4. Leemos lo que escribió el usuario
+    const nombre = document.querySelector("#Nombre").value;
+    const mensaje = document.querySelector("#mensaje").value;
+
+    // 5. Mostramos la confirmación en la página
+    mensajeForm.textContent = `Gracias, ${nombre}. Tu mensaje fue enviado con éxito.`;
+    mensajeForm.classList.add("exito");
+
+    // Limpiamos el formulario
+    formulario.reset();
+  });
+}

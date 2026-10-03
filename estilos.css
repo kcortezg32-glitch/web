@@ -70,7 +70,7 @@ nav ul li a {
   color:var(--var-accento);
   
 }
-/*Aqui se edita la información de las secciones principales*/
+/*Aqui se edita la Ofertas de las secciones principales*/
 main {
   max-width: 900px;
   margin: 30px auto;
@@ -106,7 +106,7 @@ h2 {
 h3 {
   color: var(--var-accento);
 }
-/*tarjetas pagina de información*/
+/*tarjetas pagina de Ofertas*/
 .lista_turisticas{
   display:flex;
   align-items: center;
@@ -208,6 +208,12 @@ form button:hover {
   color: var(--var-fondo);
   cursor: pointer;
 }
+/* estilo para el mensaje de éxito de js*/
+.exito {
+  background-color: var(--var-accento);
+  color: var(--var-fondo);
+}
+
 /*edición del pie de página*/
 footer {
   background-color: var(--var-titulo);

@@ -16,7 +16,7 @@
       <nav>
         <ul>
           <li><a href="index.html">Inicio</a></li>
-          <li><a href="information.html">Información</a></li>
+          <li><a href="Ofertas.html">Ofertas</a></li>
           <li><a href="nosotros.html">Nosotros</a></li>
           <li><a href="contacto.html">Contáctanos</a></li>
         </ul>
@@ -26,7 +26,7 @@
       <div class="formulario">
         <h2>Contáctanos</h2>
 
-        <form>
+        <form id="formulario">
           <!--Campo de nombre-->
           <label for="Nombre">Nombre</label>
           <input
@@ -56,7 +56,7 @@
           <fieldset>
             <legend>¿Cómo prefieres que te contactemos?</legend>
             <label>
-              <input type="radio" name="contacto" id="correo" value="correo" />
+              <input type="radio" name="contacto" value="correo" />
               Correo electrónico
             </label>
             <label>
@@ -74,12 +74,14 @@
           ></textarea>
 
           <!--Botón de envío-->
-          <button type="submit">Enviar</button>
+          <button type="submit" id="boton">Enviar</button>
+         <p id="form-mensaje"></p>
         </form>
       </div>
     </main>
     <footer id="contacto">
       <p>&copy; 2024 Mi_PANAMA. Todos los derechos reservados.</p>
     </footer>
+    <script src="js/apps.js" defer></script>
   </body>
 </html>
